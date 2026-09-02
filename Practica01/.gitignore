@@ -1,0 +1,39 @@
+﻿# Credenciales y secretos (¡NUNCA SUBIR!)
+.env
+.env.local
+*.pem
+*.key
+
+# Dependencias y paquetes
+node_modules/
+bower_components/
+__pycache__/
+*.pyc
+.venv/
+env/
+
+# Archivos del sistema operativo
+Thumbs.db
+.DS_Store
+desktop.ini
+
+# Configuraciones de editores de código
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.swp
+
+# Archivos de registro y temporales
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.eslintcache
+# Archivos específicos de Java e IntelliJ
+*.iml
+.idea/
+out/
+gen/

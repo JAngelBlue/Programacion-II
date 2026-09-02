@@ -1,0 +1,34 @@
+public class EcuacionLineal {
+    //    Generamos las variables privadas
+    private double a;
+    private double b;
+    private double c;
+    private double d;
+    private double e;
+    private double f;
+    //  El constructor
+    public EcuacionLineal(double a, double b, double c, double d, double e, double f) {
+        this.a = a;
+        this.b = b;
+        this.c = c;
+        this.d = d;
+        this.e = e;
+        this.f = f;
+    }
+
+    //Para verificar si tiene solucion
+    public boolean tieneSolucion(){
+        if ((((this.a*this.d))-((this.b*this.c)) != 0 )){
+            return true;
+        }else{
+            return false;
+        }
+    }
+    //Para obtener X y Y
+    public double getX(){
+        return (((this.e*this.d)-(this.b*this.f))/((this.a*this.d)-(this.b*this.c)));
+    }
+    public double getY(){
+        return (((this.a*this.f)-(this.e*this.c))/((this.a*this.d)-(this.b*this.c)));
+    }
+}
